@@ -20,7 +20,7 @@
   --slate: #5a4e51;
   --slate-light: #8a7d80;
   --mist: #fdeaec;
-  --cloud: #fbf6f6;
+  --cloud: #f6f7f8;
   --white: #ffffff;
   --line: rgba(125, 20, 32, 0.10);
 
@@ -158,22 +158,21 @@ body.menu-open .nav__toggle span::after { transform: translateY(-7px) rotate(-45
 
 /* ---------- Hero ---------- */
 .hero { position: relative; padding-top: calc(var(--nav-h) + clamp(48px, 9vw, 104px));
-  padding-bottom: clamp(60px, 9vw, 120px); overflow: hidden; }
+  padding-bottom: clamp(170px, 17vw, 250px); overflow: hidden; }
 .hero__bg { position: absolute; inset: 0; z-index: -3;
   background:
-    radial-gradient(1100px 560px at 88% -12%, rgba(242,77,95,0.22), transparent 60%),
-    radial-gradient(820px 520px at -6% 8%, rgba(200,16,46,0.14), transparent 55%),
-    radial-gradient(700px 700px at 60% 120%, rgba(225,29,51,0.12), transparent 60%),
-    linear-gradient(180deg, #fff5f6 0%, var(--cloud) 60%, #fbeef0 100%); }
+    radial-gradient(1000px 520px at 92% -16%, rgba(200,16,46,0.10), transparent 58%),
+    radial-gradient(760px 700px at 58% 128%, rgba(200,16,46,0.05), transparent 62%),
+    #ffffff; }
 .hero__pattern { position: absolute; inset: 0; z-index: -3; pointer-events: none;
   background-image: radial-gradient(rgba(200,16,46,0.13) 1.2px, transparent 1.4px);
   background-size: 26px 26px;
   -webkit-mask-image: radial-gradient(ellipse 80% 70% at 45% 35%, #000 45%, transparent 100%);
   mask-image: radial-gradient(ellipse 80% 70% at 45% 35%, #000 45%, transparent 100%); }
-.hero__skyline { position: absolute; left: 0; right: 0; bottom: 0; height: 210px; z-index: -3;
-  color: var(--blue-600); opacity: 0.12; pointer-events: none;
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 72%);
-  mask-image: linear-gradient(180deg, transparent 0%, #000 72%); }
+.hero__skyline { position: absolute; left: 0; right: 0; bottom: 0; height: 200px; z-index: -3;
+  color: var(--blue-600); opacity: 0.09; pointer-events: none;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 52%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 52%); }
 .hero__skyline svg { width: 100%; height: 100%; display: block; }
 .hero__mesh { position: absolute; inset: -20%; z-index: -1; filter: blur(60px); opacity: .9; }
 .blob { position: absolute; border-radius: 50%; }
