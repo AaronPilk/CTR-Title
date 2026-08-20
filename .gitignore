@@ -9,3 +9,5 @@ Thumbs.db
 
 # Dependencies (none required, but just in case)
 node_modules/
+
+_gitjunk/
